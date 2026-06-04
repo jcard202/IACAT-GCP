@@ -1,0 +1,27 @@
+# Copy to terraform.tfvars and fill in.
+
+project_id  = "iacat-test"
+domain_name = "iacat-test.quanbyit.com"
+alert_email = "devops@quanbyit.com"
+
+# Optional overrides ---------------------------------------------------------
+# region    = "asia-southeast1"
+# prod_zone = "asia-southeast1-a"
+# dr_zone   = "asia-southeast1-b"
+
+# Manage the DNS A record in Cloud DNS instead of pointing it manually.
+# create_dns_record = true
+# dns_managed_zone  = "example-com"
+
+# Set to false to deploy without HTTPS (no managed cert, no HTTPS proxy,
+# HTTP routes straight to the backend). Useful when DNS isn't available
+# or for short-lived test environments.
+# enable_https = false
+
+# Optional shared custom image for both prod and DR. See docs/SHARED-IMAGE-GUIDE.md.
+# shared_image = "<project>/family/<family>"
+# shared_image = "<project>/<image-name>"
+
+# Skip the per-VM startup script entirely when shared_image is fully baked.
+# Read variables.tf for the data-disk caveat before enabling.
+# run_startup_script = false

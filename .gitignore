@@ -1,0 +1,39 @@
+# Terraform state
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+crash.log
+crash.*.log
+
+# Local variable files — never commit secrets
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+!prod.tfvars.example
+!test.tfvars
+
+# Plugin / module cache
+.terraform/
+.terraform.lock.hcl.bak
+
+# Override files (developer-local)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configs
+.terraformrc
+terraform.rc
+
+# Bootstrap-generated / hand-written env files (project IDs + SA emails)
+.env.gcp.sh
+.env.gcp.ps1
+.env.gcp.*.sh
+.env.gcp.*.ps1
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
